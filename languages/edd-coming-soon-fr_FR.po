@@ -5,14 +5,14 @@ msgstr ""
 "Project-Id-Version: EDD Coming Soon\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/edd-coming-soon\n"
 "POT-Creation-Date: 2015-04-09 07:26:36+00:00\n"
-"PO-Revision-Date: 2015-05-20 08:24+0100\n"
+"PO-Revision-Date: 2015-05-21 16:32+0100\n"
 "Last-Translator: fxbenard | FxB <fx@fxbenard.com>\n"
 "Language-Team: fxbenard <fx@fxbenard.com>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8beta3\n"
+"X-Generator: Poedit 1.8\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
@@ -38,7 +38,7 @@ msgstr "Activer le vote"
 
 #: edd-coming-soon.php:104
 msgid "Enable voting in the %s shortcode"
-msgstr "Activer le vote dans le code court de %s"
+msgstr "Activer le vote dans le code court %s"
 
 #: edd-coming-soon.php:108 edd-coming-soon.php:444
 msgid "Votes"
@@ -46,7 +46,7 @@ msgstr "Votes"
 
 #: edd-coming-soon.php:109
 msgid "%s people want this %s"
-msgstr "%s personne(s) désire(nt) ce %s"
+msgstr "%s personne(s) attend(ent) ce %s"
 
 #: edd-coming-soon.php:257
 msgid "This download cannot be purchased"
@@ -62,7 +62,7 @@ msgstr "Je le veux"
 
 #: edd-coming-soon.php:366
 msgid "We heard you! Your interest for this %s was duly noted."
-msgstr "Parfait ! Votre intêret pour %s a bien été noté."
+msgstr "Parfait ! Votre intêret pour ce %s a bien été noté."
 
 #: edd-coming-soon.php:463
 msgid "%s with no votes won't appear in the above list."
@@ -78,7 +78,7 @@ msgstr ""
 
 #: edd-coming-soon.php:478
 msgid "Most Wanted Coming Soon %s"
-msgstr "Les %s en préparation les plus demandés"
+msgstr "Le %s en préparation le plus demandé"
 
 #: edd-coming-soon.php:496
 msgid "Voting..."
