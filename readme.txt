@@ -1,4 +1,4 @@
-=== EDD Coming Soon ===
+=== Easy Digital Downloads - Coming Soon ===
 Contributors: easydigitaldownloads, sumobi, sc0ttkclark, julien731
 Tags: easy digital downloads, digital downloads, e-downloads, edd, coming soon, sumobi
 Requires at least: 3.3
