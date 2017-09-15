@@ -1,12 +1,12 @@
 <?php
 /*
 Plugin Name: EDD Coming Soon
-Plugin URI: http://sumobi.com/shop/edd-coming-soon/
+Plugin URI: https://easydigitaldownloads.com/downloads/edd-coming-soon/
 Description: Allows "custom status" downloads (not available for purchase) and allows voting on these downloads in Easy Digital Downloads
 Version: 1.3.2
-Author: Andrew Munro, Sumobi
-Author URI: http://sumobi.com/
-Contributors: sc0ttkclark, julien731
+Author: Easy Digital Downloads
+Author URI: https://easydigitaldownloads.com
+Contributors: easydigitaldownloads, sc0ttkclark, julien731
 License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
@@ -144,7 +144,7 @@ function edd_coming_soon_admin_price_column( $price, $download_id ) {
 
 	// is coming soon download
 	$cs_active = edd_coming_soon_is_active( $download_id );
-	
+
 	// voting enabled
 	$votes_enabled = edd_coming_soon_voting_enabled( $download_id );
 
@@ -153,10 +153,10 @@ function edd_coming_soon_admin_price_column( $price, $download_id ) {
 
 	// votes
 	$votes = get_post_meta( $download_id, '_edd_coming_soon_votes', true );
-	
+
 	$price .= '<br />' . edd_coming_soon_get_custom_status_text();
 
-	if ( $cs_active && ( $votes_enabled || $votes_sc_enabled ) ) {	
+	if ( $cs_active && ( $votes_enabled || $votes_sc_enabled ) ) {
 		$price .= '<br /><strong>' . __( 'Votes: ', 'edd-coming-soon' ) . $votes . '</strong>';
 	}
 
@@ -341,7 +341,7 @@ add_action( 'init', 'edd_coming_soon_increment_votes' );
  * Save downloads with _edd_coming_soon_votes meta key set to 0
  *
  * @since   1.3.1
- * @return  
+ * @return
  */
 function edd_coming_soon_save_download( $post_id, $post ) {
 
@@ -383,7 +383,7 @@ function edd_coming_soon_voting_enabled( $download_id = 0 ) {
  * @return  int $count, 0 otherwise
  */
 function edd_coming_soon_get_votes( $download_id = 0 ) {
-	
+
 	if ( ! $download_id ) {
 		return;
 	}
@@ -558,7 +558,7 @@ function edd_coming_soon_votes_add_widget() {
 	if ( ! class_exists( 'Easy_Digital_Downloads' ) ) {
 		return;
 	}
-	
+
 	wp_add_dashboard_widget( 'edd_coming_soon_votes_widget', sprintf( __( 'Most Wanted Coming Soon %s', 'edd-coming-soon' ), edd_get_label_plural() ), 'edd_coming_soon_votes_widget' );
 }
 add_action( 'wp_dashboard_setup', 'edd_coming_soon_votes_add_widget' );
