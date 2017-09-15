@@ -3,7 +3,7 @@
 Plugin Name: Easy Digital Downloads - Coming Soon
 Plugin URI: https://easydigitaldownloads.com/downloads/edd-coming-soon/
 Description: Allows "custom status" downloads (not available for purchase) and allows voting on these downloads in Easy Digital Downloads
-Version: 1.3.2
+Version: 1.3.3
 Author: Easy Digital Downloads
 Author URI: https://easydigitaldownloads.com
 Contributors: easydigitaldownloads, sc0ttkclark, julien731
