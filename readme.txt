@@ -2,8 +2,8 @@
 Contributors: easydigitaldownloads, sumobi, sc0ttkclark, julien731
 Tags: easy digital downloads, digital downloads, e-downloads, edd, coming soon, sumobi
 Requires at least: 3.3
-Tested up to: 4.2
-Stable tag: 1.3.2
+Tested up to: 4.8.1
+Stable tag: 1.3.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
