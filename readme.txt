@@ -11,7 +11,7 @@ Allows Coming Soon or Custom Status text instead of normal pricing for downloads
 
 == Description ==
 
-This plugin requires [Easy Digital Downloads](http://wordpress.org/extend/plugins/easy-digital-downloads/ "Easy Digital Downloads"). It allows downloads to be "Coming Soon" or have Custom Status text, and prevents them from being added to the cart. It does a few things:
+This plugin requires [Easy Digital Downloads](https://wordpress.org/plugins/easy-digital-downloads/ "Easy Digital Downloads"). It allows downloads to be "Coming Soon" or have Custom Status text, and prevents them from being added to the cart. It does a few things:
 
 1. Adds a checkbox to the download configuration so you can set the download to Coming Soon / Custom Status.
 1. Adds a text field to the download configuration so you can set the text to show (default "Coming Soon").
@@ -53,14 +53,6 @@ This message can be tested by appending ?edd_action=add_to_cart&download_id=XXX 
 	    return __( 'This item cannot be purchased just yet, hang tight!', 'edd-coming-soon' );
     }
     add_filter( 'edd_coming_soon_pre_add_to_cart', 'edd_coming_soon_modify_prevent_download_message' );
-
-**Stay up to date**
-
-*Become a fan on Facebook*
-[http://www.facebook.com/sumobicom](http://www.facebook.com/sumobicom "Facebook")
-
-*Follow me on Twitter*
-[http://twitter.com/sumobi_](http://twitter.com/sumobi_ "Twitter")
 
 == Installation ==
 
