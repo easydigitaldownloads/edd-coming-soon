@@ -1,5 +1,5 @@
 === EDD Coming Soon ===
-Contributors: sumobi, sc0ttkclark, julien731
+Contributors: easydigitaldownloads, sumobi, sc0ttkclark, julien731
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EFUPMPEZPGW7L
 Tags: easy digital downloads, digital downloads, e-downloads, edd, coming soon, sumobi
 Requires at least: 3.3
@@ -39,7 +39,7 @@ Example filter of how you can modify the markup of the coming soon text in the a
     add_filter( 'edd_coming_soon_display_admin_text', 'edd_coming_soon_modify_admin_column_text' );
 
 
-Example filter of how you can modify the markup of the coming soon text on the front end. Copy this function to your functions.php 
+Example filter of how you can modify the markup of the coming soon text on the front end. Copy this function to your functions.php
 
     function edd_coming_soon_modify_text( $custom_text ) {
 	    return '<h2>' . $custom_text . '</h2>';
@@ -51,16 +51,16 @@ Example filter of how you can modify the message that displays when someone trie
 This message can be tested by appending ?edd_action=add_to_cart&download_id=XXX to your URL, substituting XXX with your download ID
 
     function edd_coming_soon_modify_prevent_download_message( $download_id ) {
-	    return __( 'This item cannot be purchased just yet, hang tight!', 'edd-coming-soon' ); 
+	    return __( 'This item cannot be purchased just yet, hang tight!', 'edd-coming-soon' );
     }
     add_filter( 'edd_coming_soon_pre_add_to_cart', 'edd_coming_soon_modify_prevent_download_message' );
 
 **Stay up to date**
 
-*Become a fan on Facebook* 
+*Become a fan on Facebook*
 [http://www.facebook.com/sumobicom](http://www.facebook.com/sumobicom "Facebook")
 
-*Follow me on Twitter* 
+*Follow me on Twitter*
 [http://twitter.com/sumobi_](http://twitter.com/sumobi_ "Twitter")
 
 == Installation ==
@@ -99,7 +99,7 @@ Add the following to your functions.php
 
 1. Easy Digital Download's download configuration metabox with the new coming soon option
 
-1. The coming soon text is displayed underneath the price on the admin pricing columns 
+1. The coming soon text is displayed underneath the price on the admin pricing columns
 
 1. The download's price is removed from the standard download grid, and the coming soon text is shown
 
@@ -125,7 +125,7 @@ Add the following to your functions.php
 = 1.2 =
 * Fix: Coming soon text not displaying on front-end
 * New: Coming soon text is now shown underneath the price in the admin columns
-* New: Added example filters 
+* New: Added example filters
 
 = 1.1 =
 * Added the ability to set custom text per download, default remains "Coming Soon". Thanks to @sc0ttkclark
