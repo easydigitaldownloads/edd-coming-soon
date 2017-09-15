@@ -1,6 +1,5 @@
 === EDD Coming Soon ===
 Contributors: easydigitaldownloads, sumobi, sc0ttkclark, julien731
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EFUPMPEZPGW7L
 Tags: easy digital downloads, digital downloads, e-downloads, edd, coming soon, sumobi
 Requires at least: 3.3
 Tested up to: 4.2
