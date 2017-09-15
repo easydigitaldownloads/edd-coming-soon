@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: EDD Coming Soon
+Plugin Name: Easy Digital Downloads - Coming Soon
 Plugin URI: https://easydigitaldownloads.com/downloads/edd-coming-soon/
 Description: Allows "custom status" downloads (not available for purchase) and allows voting on these downloads in Easy Digital Downloads
 Version: 1.3.2
