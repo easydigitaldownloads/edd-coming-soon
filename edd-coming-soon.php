@@ -642,6 +642,9 @@ if ( ! class_exists( 'EDD_Coming_Soon' ) ) {
 
 			<?php else : ?>
 
+				<?php
+					$vote_button_classes = apply_filters( 'edd_coming_soon_vote_btn_classes', array( 'edd-coming-soon-vote-btn' ) );
+				?>
 				<form role="form" method="post" action="<?php echo get_permalink( $post->ID ); ?>" class="edd-coming-soon-vote-form">
 
 					<?php if ( 'no' != $description ) : ?>
@@ -651,7 +654,7 @@ if ( ! class_exists( 'EDD_Coming_Soon' ) ) {
 					<input type="hidden" name="edd_cs_pid" value="<?php echo $pid; ?>">
 					<input type="hidden" name="edd_cs_redirect" value="<?php echo $post->ID; ?>">
 					<?php wp_nonce_field( 'vote', 'edd_cs_nonce', false, true ); ?>
-					<button type="submit" class="edd-coming-soon-vote-btn" name="edd_cs_vote"><?php echo apply_filters( 'edd_cs_btn_icon', '<span class="dashicons dashicons-heart"></span>' ); ?> <?php echo $submission; ?></button>
+					<button type="submit" class="<?php echo implode( ' ', array_filter( $vote_button_classes ) ); ?>" name="edd_cs_vote"><?php echo apply_filters( 'edd_cs_btn_icon', '<span class="dashicons dashicons-heart"></span>' ); ?> <?php echo $submission; ?></button>
 				</form>
 
 			<?php endif;
