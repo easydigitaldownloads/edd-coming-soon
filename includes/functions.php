@@ -25,4 +25,5 @@ function edd_coming_soon_is_active( $download_id = 0 ) {
 		return (boolean) get_post_meta( $download_id, 'edd_coming_soon', true );
 
 	return false;
+	
 }
