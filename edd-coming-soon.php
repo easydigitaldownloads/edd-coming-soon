@@ -345,7 +345,7 @@ if ( ! class_exists( 'EDD_Coming_Soon' ) ) {
 			$cs_active = edd_coming_soon_is_active( $download_id );
 
 			// Check if voting is enabled for the download.
-			$votes_enabled = $this->voting_enabled( $download_id );
+			$votes_enabled = edd_coming_soon_voting_enabled( $download_id );
 
 			// Check whether voting is enabled for the shortcode.
 			$votes_sc_enabled = (boolean) get_post_meta( $download_id, 'edd_cs_vote_enable_sc', true );
@@ -545,31 +545,10 @@ if ( ! class_exists( 'EDD_Coming_Soon' ) ) {
 			$count = $this->get_votes( $post_id );
 
 			// update count on save if no count currently exists
-			if ( $this->voting_enabled( $post_id ) && ! $count ) {
+			if ( edd_coming_soon_voting_enabled( $post_id ) && ! $count ) {
 				update_post_meta( $post_id, '_edd_coming_soon_votes', 0 );
 			}
 
-		}
-
-		/**
-		 * Check if a download has voting enabled.
-		 *
-		 * @since   1.3.1
-		 * @return  boolean
-		 */
-		public function voting_enabled( $download_id = 0 ) {
-
-			if ( ! $download_id ) {
-				return;
-			}
-
-			$voting_enabled = get_post_meta( $download_id , 'edd_cs_vote_enable', true );
-
-			if ( $voting_enabled ) {
-				return true;
-			}
-
-			return false;
 		}
 
 		/**
