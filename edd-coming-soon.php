@@ -126,8 +126,8 @@ if ( ! class_exists( 'EDD_Coming_Soon' ) ) {
 		private function setup_constants() {
 
 			// Plugin constants
-			if ( ! defined( 'EDD_COMING_SOON' ) ) {
-				define( 'EDD_COMING_SOON', $this->version );
+			if ( ! defined( 'EDD_COMING_SOON_VERSION' ) ) {
+				define( 'EDD_COMING_SOON_VERSION', $this->version );
 			}
 
 			if ( ! defined( 'EDD_COMING_SOON_URL' ) ) {
@@ -378,7 +378,7 @@ if ( ! class_exists( 'EDD_Coming_Soon' ) ) {
 				return;
 
 			$custom_text = get_post_meta( get_the_ID(), 'edd_coming_soon_text', true );
-			$custom_text = !empty ( $custom_text ) ? $custom_text : apply_filters( 'edd_cs_coming_soon_text', __( 'Coming Soon', 'edd-coming-soon' ) );
+			$custom_text = ! empty ( $custom_text ) ? $custom_text : apply_filters( 'edd_cs_coming_soon_text', __( 'Coming Soon', 'edd-coming-soon' ) );
 
 			// Either the custom status or default 'Coming Soon' text.
 
@@ -489,7 +489,7 @@ if ( ! class_exists( 'EDD_Coming_Soon' ) ) {
 				return;
 			}
 
-			wp_enqueue_script( 'edd-cp-admin-scripts', EDD_COMING_SOON_URL . 'js/edd-coming-soon-admin.js', array( 'jquery' ), EDD_COMING_SOON );
+			wp_enqueue_script( 'edd-cp-admin-scripts', EDD_COMING_SOON_URL . 'js/edd-coming-soon-admin.js', array( 'jquery' ), EDD_COMING_SOON_VERSION );
 		}
 
 		/**
