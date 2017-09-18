@@ -384,10 +384,10 @@ if ( ! class_exists( 'EDD_Coming_Soon' ) ) {
 
 			// admin colum text
 			if ( is_admin() ) {
-				return apply_filters( 'edd_coming_soon_display_admin_text', '<strong>' . $custom_text . '</strong>' );
+				return apply_filters( 'edd_coming_soon_display_admin_text', '<strong>' . $custom_text . '</strong>', $custom_text );
 			} else {
 				// front-end text.
-				return apply_filters( 'edd_coming_soon_display_text', '<p><strong>' . $custom_text . '</strong></p>' );
+				return apply_filters( 'edd_coming_soon_display_text', '<p><strong>' . $custom_text . '</strong></p>', $custom_text );
 			}
 		}
 
