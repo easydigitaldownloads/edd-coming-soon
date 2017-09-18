@@ -208,7 +208,7 @@ if ( ! class_exists( 'EDD_Coming_Soon' ) ) {
 			add_action( 'wp_footer', array( $this, 'voting_progress' ) );
 
 			// Show the "Coming Soon" notice at the end of the single download.
-			add_filter( 'the_content', array( $this, 'single_download' ) );
+			add_filter( 'the_content', array( $this, 'coming_soon_notice' ) );
 
 			// Removes the standard purchase form from the download.
 			add_filter( 'edd_purchase_download_form', array( $this, 'purchase_download_form' ), 10, 2 );
@@ -402,12 +402,12 @@ if ( ! class_exists( 'EDD_Coming_Soon' ) ) {
 		}
 
 		/**
-		 * Append coming soon text after main content on single download pages
+		 * Append coming soon notice after main content on single download pages
 		 *
 		 * @return $content The main post content
 		 * @since 1.2
 		*/
-		public function single_download( $content ) {
+		public function coming_soon_notice( $content ) {
 
 			if ( is_singular( 'download' ) && is_main_query() ) {
 				return $content . $this->get_custom_status_text();
