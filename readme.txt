@@ -79,13 +79,6 @@ It depends on how your theme displays the price on your single download page. If
          // the code you don't want to show when a download is set to coming soon
     <?php endif; ?>
 
-= I don't want to show the coming soon text after the content on the single download page, how can I remove it? =
-
-Add the following to your functions.php
-
-    remove_filter( 'the_content', 'edd_coming_soon_single_download' );
-
-
 == Screenshots ==
 
 1. Easy Digital Download's download configuration metabox with the new coming soon option
@@ -97,6 +90,14 @@ Add the following to your functions.php
 1. The download's coming soon text is shown after the content on the single download page. This can be removed
 
 == Changelog ==
+
+= 1.3.3 =
+* New: Added a edd_coming_soon_vote_btn_classes filter hook
+* New: Added activation class to check for the existence of Easy Digital Downloads when activating
+* Tweak: Updated plugin information and readme
+* Tweak: Allow $custom_text variable to be used with the edd_coming_soon_display_admin_text filter hook
+* Tweak: Allow $custom_text variable to be used with the edd_coming_soon_display_text filter hook
+* Fix: Fixed an instance where the vote count code appear on the front-end of the website
 
 = 1.3.2 =
 * Fix: Various PHP notices
