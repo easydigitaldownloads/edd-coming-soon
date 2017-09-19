@@ -97,6 +97,7 @@ It depends on how your theme displays the price on your single download page. If
 * Tweak: Updated plugin information and readme
 * Tweak: Allow $custom_text variable to be used with the edd_coming_soon_display_admin_text filter hook
 * Tweak: Allow $custom_text variable to be used with the edd_coming_soon_display_text filter hook
+* Tweak: The coming soon notice now uses EDD's native edd_after_download_content hook
 * Fix: Fixed an instance where the vote count code appear on the front-end of the website
 
 = 1.3.2 =
