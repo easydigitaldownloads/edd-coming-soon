@@ -160,7 +160,7 @@ class EDD_Coming_Soon_Admin {
     /**
      * Add a dashboard widget for votes.
      *
-     * @since \1.3.0
+     * @since 1.3.0
      */
     public function votes_dashboard_widget() {
         wp_add_dashboard_widget( 'edd_coming_soon_votes_widget', sprintf( __( 'Most Wanted Coming Soon %s', 'edd-coming-soon' ), edd_get_label_plural() ), array( $this, 'votes_widget' ) );
@@ -193,7 +193,7 @@ class EDD_Coming_Soon_Admin {
 
         // update count on save if no count currently exists
         if ( edd_coming_soon_voting_enabled( $post_id ) && ! $count ) {
-        update_post_meta( $post_id, '_edd_coming_soon_votes', 0 );
+            update_post_meta( $post_id, '_edd_coming_soon_votes', 0 );
         }
 
     }
@@ -224,7 +224,7 @@ class EDD_Coming_Soon_Admin {
 
         // Output the vote count to the price.
         if ( $cs_active && ( $votes_enabled || $votes_sc_enabled ) ) {
-        $price .= '<br /><strong>' . __( 'Votes: ', 'edd-coming-soon' ) . $votes . '</strong>';
+            $price .= '<br /><strong>' . __( 'Votes: ', 'edd-coming-soon' ) . $votes . '</strong>';
         }
 
         // Return the price.

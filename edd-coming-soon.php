@@ -244,9 +244,11 @@ if ( ! class_exists( 'EDD_Coming_Soon' ) ) {
 		 * @since 1.2
 		 */
 		public function get_custom_status_text() {
-			if ( ! edd_coming_soon_is_active( get_the_ID() ) )
-				return;
 
+			if ( ! edd_coming_soon_is_active( get_the_ID() ) ) {
+				return;
+			}
+			
 			$custom_text = get_post_meta( get_the_ID(), 'edd_coming_soon_text', true );
 			$custom_text = ! empty ( $custom_text ) ? $custom_text : apply_filters( 'edd_cs_coming_soon_text', __( 'Coming Soon', 'edd-coming-soon' ) );
 
