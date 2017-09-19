@@ -93,12 +93,14 @@ It depends on how your theme displays the price on your single download page. If
 
 = 1.3.3 =
 * New: Added a edd_coming_soon_vote_btn_classes filter hook
-* New: Added activation class to check for the existence of Easy Digital Downloads when activating
-* Tweak: Updated plugin information and readme
+* New: Added activation class to check for the existence of Easy Digital Downloads upon activation
+* Tweak: Updated plugin information and readme file
 * Tweak: Allow $custom_text variable to be used with the edd_coming_soon_display_admin_text filter hook
 * Tweak: Allow $custom_text variable to be used with the edd_coming_soon_display_text filter hook
 * Tweak: The coming soon notice now uses EDD's native edd_after_download_content hook
-* Fix: Fixed an instance where the vote count code appear on the front-end of the website
+* Tweak: Improved singular/plural translation
+* Tweak: Updated .pot translation file
+* Fix: Fixed an instance where the vote count could appear on the front-end of the website
 
 = 1.3.2 =
 * Fix: Various PHP notices
