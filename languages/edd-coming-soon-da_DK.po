@@ -1,0 +1,122 @@
+# Copyright (C) 2015 Andrew Munro, Sumobi
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Digital Downloads - Coming Soon\n"
+"Report-Msgid-Bugs-To: Andrew Munro <andrew@sumobi.com>\n"
+"POT-Creation-Date: 2017-09-19 14:23+1200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-01-14 13:50+0100\n"
+"Language-Team: Easy Digital Downloads <support@easydigitaldownloads.com>\n"
+"X-Generator: Poedit 2.0.5\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"Last-Translator: Finn Sommer Jensen <f.sommer.jensen@gmail.com>\n"
+"Language: da_DK\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: edd-coming-soon.php:83 edd-coming-soon.php:95
+msgid "Cheatin&#8217; huh?"
+msgstr "Halløj! snyder du?"
+
+#: edd-coming-soon.php:251 includes/class-admin.php:54
+msgid "Coming Soon"
+msgstr "Kommer Snart"
+
+#: edd-coming-soon.php:337
+msgid "This download cannot be purchased"
+msgstr "Denne downloads kan ikke købes"
+
+#: edd-coming-soon.php:443
+msgid "Let us know you're interested by voting below."
+msgstr "Lad os vide, at du er interesseret ved at give din stemme nedenfor."
+
+#: edd-coming-soon.php:444
+msgid "I want this"
+msgstr "Jeg ønsker dette"
+
+#: edd-coming-soon.php:445
+#, php-format
+msgid "We heard you! Your interest for this %s was duly noted."
+msgstr "Vi har hørt dig! Din interesse for dette %s er blevet noteret."
+
+#: edd-coming-soon.php:490
+msgid "Voting..."
+msgstr "Afstemning..."
+
+#: includes/class-activation.php:44
+msgid "This plugin"
+msgstr "Dette plugin"
+
+#: includes/class-activation.php:79
+#, php-format
+msgid "requires %s. Please activate it to continue."
+msgstr "obligatorisk %s. Aktiver det venligst for, at fortsætte."
+
+#: includes/class-activation.php:82
+#, php-format
+msgid "requires %s. Please install it to continue."
+msgstr "obligatorisk %s. Installere det venligst for, at fortsætte."
+
+#: includes/class-admin.php:59
+msgid "Enable Coming Soon / Custom Status download"
+msgstr "Aktiver Kommer Snart / Brugertilpasset Status download"
+
+#: includes/class-admin.php:67
+#, php-format
+msgid "Custom Status text (default: <em>%s</em>)"
+msgstr "Brugertilpasset status tekst (standard: <em>%s</em>)"
+
+#: includes/class-admin.php:71
+msgid "Voting"
+msgstr "Afstemning"
+
+#: includes/class-admin.php:76
+msgid "Enable voting"
+msgstr "Aktiver afstemning"
+
+#: includes/class-admin.php:83
+#, php-format
+msgid "Enable voting in the %s shortcode"
+msgstr "Aktiver afstemning i %s kort-koden"
+
+#: includes/class-admin.php:87 includes/class-admin.php:133
+msgid "Votes"
+msgstr "Stemmer"
+
+#: includes/class-admin.php:88
+#, php-format
+msgid "%s person wants this %s"
+msgid_plural "%s people want this %s"
+msgstr[0] "%s person ønsker denne %s"
+msgstr[1] "%s personer ønsker denne %s"
+
+#: includes/class-admin.php:152
+#, php-format
+msgid "%s with no votes won't appear in the above list."
+msgstr "%s uden stemmer, vises det ikke på ovenstående liste."
+
+#: includes/class-admin.php:155
+#, php-format
+msgid ""
+"Either there are no &laquo;Coming Soon&raquo; %s in the shop at the moment, "
+"or none of them received votes."
+msgstr ""
+"Enten er der ingen &laquo;Kommer Snart&raquo; %s i e-butikken på nuværende "
+"tidspunkt eller så har ingen af dem fået stemmer."
+
+#: includes/class-admin.php:166
+#, php-format
+msgid "Most Wanted Coming Soon %s"
+msgstr "Mest ønskede Kommer Snart %s"
+
+#: includes/class-admin.php:227
+msgid "Votes: "
+msgstr "Stemmer: "
