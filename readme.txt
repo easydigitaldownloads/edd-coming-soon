@@ -1,10 +1,9 @@
-=== EDD Coming Soon ===
-Contributors: sumobi, sc0ttkclark, julien731
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EFUPMPEZPGW7L
+=== Easy Digital Downloads - Coming Soon ===
+Contributors: easydigitaldownloads, sumobi, sc0ttkclark, julien731
 Tags: easy digital downloads, digital downloads, e-downloads, edd, coming soon, sumobi
 Requires at least: 3.3
-Tested up to: 4.2
-Stable tag: 1.3.2
+Tested up to: 4.8.1
+Stable tag: 1.3.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +11,7 @@ Allows Coming Soon or Custom Status text instead of normal pricing for downloads
 
 == Description ==
 
-This plugin requires [Easy Digital Downloads](http://wordpress.org/extend/plugins/easy-digital-downloads/ "Easy Digital Downloads"). It allows downloads to be "Coming Soon" or have Custom Status text, and prevents them from being added to the cart. It does a few things:
+This plugin requires [Easy Digital Downloads](https://wordpress.org/plugins/easy-digital-downloads/ "Easy Digital Downloads"). It allows downloads to be "Coming Soon" or have Custom Status text, and prevents them from being added to the cart. It does a few things:
 
 1. Adds a checkbox to the download configuration so you can set the download to Coming Soon / Custom Status.
 1. Adds a text field to the download configuration so you can set the text to show (default "Coming Soon").
@@ -39,7 +38,7 @@ Example filter of how you can modify the markup of the coming soon text in the a
     add_filter( 'edd_coming_soon_display_admin_text', 'edd_coming_soon_modify_admin_column_text' );
 
 
-Example filter of how you can modify the markup of the coming soon text on the front end. Copy this function to your functions.php 
+Example filter of how you can modify the markup of the coming soon text on the front end. Copy this function to your functions.php
 
     function edd_coming_soon_modify_text( $custom_text ) {
 	    return '<h2>' . $custom_text . '</h2>';
@@ -51,17 +50,9 @@ Example filter of how you can modify the message that displays when someone trie
 This message can be tested by appending ?edd_action=add_to_cart&download_id=XXX to your URL, substituting XXX with your download ID
 
     function edd_coming_soon_modify_prevent_download_message( $download_id ) {
-	    return __( 'This item cannot be purchased just yet, hang tight!', 'edd-coming-soon' ); 
+	    return __( 'This item cannot be purchased just yet, hang tight!', 'edd-coming-soon' );
     }
     add_filter( 'edd_coming_soon_pre_add_to_cart', 'edd_coming_soon_modify_prevent_download_message' );
-
-**Stay up to date**
-
-*Become a fan on Facebook* 
-[http://www.facebook.com/sumobicom](http://www.facebook.com/sumobicom "Facebook")
-
-*Follow me on Twitter* 
-[http://twitter.com/sumobi_](http://twitter.com/sumobi_ "Twitter")
 
 == Installation ==
 
@@ -88,24 +79,28 @@ It depends on how your theme displays the price on your single download page. If
          // the code you don't want to show when a download is set to coming soon
     <?php endif; ?>
 
-= I don't want to show the coming soon text after the content on the single download page, how can I remove it? =
-
-Add the following to your functions.php
-
-    remove_filter( 'the_content', 'edd_coming_soon_single_download' );
-
-
 == Screenshots ==
 
 1. Easy Digital Download's download configuration metabox with the new coming soon option
 
-1. The coming soon text is displayed underneath the price on the admin pricing columns 
+1. The coming soon text is displayed underneath the price on the admin pricing columns
 
 1. The download's price is removed from the standard download grid, and the coming soon text is shown
 
 1. The download's coming soon text is shown after the content on the single download page. This can be removed
 
 == Changelog ==
+
+= 1.3.3 =
+* New: Added a edd_coming_soon_vote_btn_classes filter hook
+* New: Added activation class to check for the existence of Easy Digital Downloads upon activation
+* Tweak: Updated plugin information and readme file
+* Tweak: Allow $custom_text variable to be used with the edd_coming_soon_display_admin_text filter hook
+* Tweak: Allow $custom_text variable to be used with the edd_coming_soon_display_text filter hook
+* Tweak: The coming soon notice now uses EDD's native edd_after_download_content hook
+* Tweak: Improved singular/plural translations
+* Tweak: Updated .pot translation file
+* Fix: Fixed an instance where the vote count could appear on the front-end of the website
 
 = 1.3.2 =
 * Fix: Various PHP notices
@@ -125,7 +120,7 @@ Add the following to your functions.php
 = 1.2 =
 * Fix: Coming soon text not displaying on front-end
 * New: Coming soon text is now shown underneath the price in the admin columns
-* New: Added example filters 
+* New: Added example filters
 
 = 1.1 =
 * Added the ability to set custom text per download, default remains "Coming Soon". Thanks to @sc0ttkclark
