@@ -3,107 +3,133 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: EDD Coming Soon\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/edd-coming-soon\n"
-"POT-Creation-Date: 2015-04-09 07:26:36+00:00\n"
-"PO-Revision-Date: 2015-04-10 15:54+0100\n"
-"Last-Translator: fxbenard | FxB <fx@fxbenard.com>\n"
+"Report-Msgid-Bugs-To: Andrew Munro <andrew@sumobi.com>\n"
+"POT-Creation-Date: 2017-09-19 14:23+1200\n"
+"PO-Revision-Date: 2018-11-08 10:07+0100\n"
+"Last-Translator: fxbenard pour WP-Translations <fx@wp-translations.pro>\n"
 "Language-Team: fxbenard <fx@fxbenard.com>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8beta1\n"
+"X-Generator: Poedit 2.2\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: edd-coming-soon.php:75 edd-coming-soon.php:164
+#: edd-coming-soon.php:83 edd-coming-soon.php:95
+msgid "Cheatin&#8217; huh?"
+msgstr "Une mauvaise manipulation ?"
+
+#: edd-coming-soon.php:251 includes/class-admin.php:54
 msgid "Coming Soon"
 msgstr "Prochainement"
 
-#: edd-coming-soon.php:80
-msgid "Enable Coming Soon / Custom Status download"
-msgstr "Activer l'état Prochainement / Personnalisé"
-
-#: edd-coming-soon.php:88
-msgid "Custom Status text (default: <em>%s</em>)"
-msgstr "Texte de l'état personnalisé (par défaut : <em>%s</em>)"
-
-#: edd-coming-soon.php:92
-msgid "Voting"
-msgstr "Vote"
-
-#: edd-coming-soon.php:97
-msgid "Enable voting"
-msgstr "Activer le vote"
-
-#: edd-coming-soon.php:104
-msgid "Enable voting in the %s shortcode"
-msgstr "Activer le vote dans le code court de %s"
-
-#: edd-coming-soon.php:108 edd-coming-soon.php:444
-msgid "Votes"
-msgstr "Votes"
-
-#: edd-coming-soon.php:109
-msgid "%s people want this %s"
-msgstr "%s personne veulent ce %s"
-
-#: edd-coming-soon.php:257
+#: edd-coming-soon.php:337
 msgid "This download cannot be purchased"
 msgstr "Ce téléchargement ne peut être acheté"
 
-#: edd-coming-soon.php:358
+#: edd-coming-soon.php:443
 msgid "Let us know you're interested by voting below."
-msgstr "Faites-moi savoir que vous êtes intéressé en votant ci-dessous."
+msgstr "Faites-nous savoir que vous êtes intéressé·e en votant ci-dessous."
 
-#: edd-coming-soon.php:359
+#: edd-coming-soon.php:444
 msgid "I want this"
 msgstr "Je le veux"
 
-#: edd-coming-soon.php:366
+#: edd-coming-soon.php:445
+#, php-format
 msgid "We heard you! Your interest for this %s was duly noted."
-msgstr "Parfait ! Votre intêret pour %s a bien été noté."
+msgstr "Parfait ! Votre intêret pour ce %s a bien été noté."
 
-#: edd-coming-soon.php:463
-msgid "%s with no votes won't appear in the above list."
-msgstr "Les %s sans vote n'apparaitront pas dans la liste ci-dessus."
-
-#: edd-coming-soon.php:466
-msgid ""
-"Either there are no &laquo;Coming Soon&raquo; %s in the shop at the moment, or "
-"none of them received votes."
-msgstr ""
-"Il n'y a aucun %s « En préparation » dans la boutique pour le moment, ou aucun "
-"d'eux n'a obtenu de vote."
-
-#: edd-coming-soon.php:478
-msgid "Most Wanted Coming Soon %s"
-msgstr "Le %s en préparation le plus demandé"
-
-#: edd-coming-soon.php:496
+#: edd-coming-soon.php:490
 msgid "Voting..."
 msgstr "Vote..."
 
-#. Plugin Name of the plugin/theme
-msgid "EDD Coming Soon"
-msgstr "EDD Coming Soon"
+#: includes/class-activation.php:44
+msgid "This plugin"
+msgstr "Cette extension"
 
-#. Plugin URI of the plugin/theme
-msgid "http://sumobi.com/shop/edd-coming-soon/"
-msgstr "http://sumobi.com/shop/edd-coming-soon/"
+#: includes/class-activation.php:79
+#, php-format
+msgid "requires %s. Please activate it to continue."
+msgstr " nécessite %s. Veuillez l’activer pour continuer."
 
-#. Description of the plugin/theme
+#: includes/class-activation.php:82
+#, php-format
+msgid "requires %s. Please install it to continue."
+msgstr " nécessite %s. Veuillez l’installer pour continuer."
+
+#: includes/class-admin.php:59
+msgid "Enable Coming Soon / Custom Status download"
+msgstr "Activer l’état Prochainement/Personnalisé"
+
+#: includes/class-admin.php:67
+#, php-format
+msgid "Custom Status text (default: <em>%s</em>)"
+msgstr "Texte de l’état personnalisé (par défaut : <em>%s</em>)"
+
+#: includes/class-admin.php:71
+msgid "Voting"
+msgstr "Vote"
+
+#: includes/class-admin.php:76
+msgid "Enable voting"
+msgstr "Activer le vote"
+
+#: includes/class-admin.php:83
+#, php-format
+msgid "Enable voting in the %s shortcode"
+msgstr "Activer le vote dans le code court %s"
+
+#: includes/class-admin.php:87 includes/class-admin.php:133
+msgid "Votes"
+msgstr "Votes"
+
+#: includes/class-admin.php:88
+#, php-format
+msgid "%s person wants this %s"
+msgid_plural "%s people want this %s"
+msgstr[0] "%s personne attend ce %s"
+msgstr[1] "%s personnes attendent ce %s"
+
+#: includes/class-admin.php:152
+#, php-format
+msgid "%s with no votes won't appear in the above list."
+msgstr "Les %s sans vote n’apparaitront pas dans la liste ci-dessus."
+
+#: includes/class-admin.php:155
+#, php-format
 msgid ""
-"Allows \"custom status\" downloads (not available for purchase) and allows "
-"voting on these downloads in Easy Digital Downloads"
+"Either there are no &laquo;Coming Soon&raquo; %s in the shop at the moment, "
+"or none of them received votes."
 msgstr ""
-"Permet de créer un \"état personnalisé\" (non disponible à l'achat) et de "
-"voter sur ces téléchargements dans Easy Digital Downloads"
+"Il n’y a aucun %s « En préparation » dans la boutique pour le moment, ou "
+"aucun d’eux n’a obtenu de vote."
 
-#. Author of the plugin/theme
-msgid "Andrew Munro, Sumobi"
-msgstr "Andrew Munro, Sumobi"
+#: includes/class-admin.php:166
+#, php-format
+msgid "Most Wanted Coming Soon %s"
+msgstr "Le %s en préparation le plus demandé"
 
-#. Author URI of the plugin/theme
-msgid "http://sumobi.com/"
-msgstr "http://sumobi.com/"
+#: includes/class-admin.php:227
+msgid "Votes: "
+msgstr "Votes : "
+
+#~ msgid "EDD Coming Soon"
+#~ msgstr "EDD Coming Soon"
+
+#~ msgid "http://sumobi.com/shop/edd-coming-soon/"
+#~ msgstr "http://sumobi.com/shop/edd-coming-soon/"
+
+#~ msgid ""
+#~ "Allows \"custom status\" downloads (not available for purchase) and "
+#~ "allows voting on these downloads in Easy Digital Downloads"
+#~ msgstr ""
+#~ "Permet de créer un \"état personnalisé\" (non disponible à l'achat) et de "
+#~ "voter sur ces téléchargements dans Easy Digital Downloads"
+
+#~ msgid "Andrew Munro, Sumobi"
+#~ msgstr "Andrew Munro, Sumobi"
+
+#~ msgid "http://sumobi.com/"
+#~ msgstr "http://sumobi.com/"
