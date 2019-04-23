@@ -85,7 +85,7 @@ class EDD_Coming_Soon_Admin {
             </p>
 
             <p><strong><?php _e( 'Votes', 'edd-coming-soon' ); ?></strong></p>
-            <p><?php printf( _n( '%s person wants this %s', '%s people want this %s', "<strong>$count</strong>", edd_get_label_singular( true ), 'edd-coming-soon' ), "<strong>$count</strong>", edd_get_label_singular( true ) ); ?></p>
+            <p><?php printf( _n( '%s person wants this %s', '%s people want this %s', "<strong>$count</strong>", 'edd-coming-soon' ), "<strong>$count</strong>", edd_get_label_singular( true ) ); ?></p>
 
         </div>
     <?php
